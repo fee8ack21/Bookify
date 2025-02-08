@@ -10,6 +10,9 @@ dotnet new classlib -f net8.0 -o src/Bookify.Domain
 
 # 加入 Project 到 Solution
 dotnet sln add src/Bookify.Domain/Bookify.Domain.csproj
+
+# 加入 Package 到指定 Project
+dotnet add src/Bookify.Domain/Bookify.Domain.csproj package MediatR.Contracts 
 ```
 
 
